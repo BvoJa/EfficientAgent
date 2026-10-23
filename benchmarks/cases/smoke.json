@@ -1,0 +1,26 @@
+[
+  {
+    "id": "select_best",
+    "task": "Inspect benchmarks/datasets/models.csv. Select the model with the highest mAP among rows with latency_ms below 50. Save a JSON report best-model.json using the query observation, then summarize the winner.",
+    "script": "examples/select_best.script.json",
+    "oracle": {"tool":"query_csv", "field":"model", "expected":["tiny-b"], "report":"best-model.json"}
+  },
+  {
+    "id": "compare",
+    "task": "Inspect benchmarks/datasets/models.csv, compare accuracy and latency for all models by sorting accuracy descending, and write a Markdown report comparison.md using those observations.",
+    "script": "examples/compare.script.json",
+    "oracle": {"tool":"query_csv", "field":"model", "expected":["tiny-c","tiny-b","tiny-d","tiny-a"], "report":"comparison.md"}
+  },
+  {
+    "id": "top_three",
+    "task": "Inspect benchmarks/datasets/configurations.csv. Select the top three configurations by fps descending, breaking ties with size_mb ascending. Save a JSON report top-three.json using that query observation.",
+    "script": "examples/top_three.script.json",
+    "oracle": {"tool":"query_csv", "field":"config", "expected":["cpu-3","cpu-2","cpu-5"], "report":"top-three.json"}
+  },
+  {
+    "id": "sqlite",
+    "task": "Query benchmarks/datasets/benchmark.sqlite table benchmarks. Select model, latency_ms and fps for the three fastest rows by latency_ms ascending. Save a Markdown report fastest.md using the query observation and summarize.",
+    "script": "examples/sqlite.script.json",
+    "oracle": {"tool":"query_sqlite", "field":"model", "expected":["tiny-a","tiny-d","tiny-b"], "report":"fastest.md"}
+  }
+]

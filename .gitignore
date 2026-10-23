@@ -1,0 +1,10 @@
+/build*/
+/models/
+/outputs/
+/benchmarks/results/*
+!/benchmarks/results/README.md
+__pycache__/
+*.pyc
+.venv/
+.tools/
+/third_party/llama.cpp/

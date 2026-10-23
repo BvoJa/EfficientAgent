@@ -1,0 +1,39 @@
+{
+  "implemented": [
+    "llama_server_http",
+    "full_context",
+    "all_tools",
+    "fixed_step_budget",
+    "non_thinking",
+    "bounded_correction",
+    "schema_constrained_json",
+    "deterministic_report_rendering"
+  ],
+  "planned": [
+    "q4_k_m_comparison",
+    "f16_if_feasible",
+    "cpu_thread_sweep",
+    "context_size_sweep",
+    "batch_microbatch_sweep",
+    "mmap_and_load_time",
+    "warm_cold_inference",
+    "sliding_window",
+    "structured_compression",
+    "selective_observations",
+    "prompt_kv_reuse",
+    "rule_tool_filter",
+    "keyword_tool_retrieval",
+    "embedding_retrieval_if_justified",
+    "thinking_mode",
+    "adaptive_step_budget",
+    "prompt_ablation",
+    "single_vs_multi_step",
+    "optional_verifier_ablation",
+    "speculative_if_compatible",
+    "kv_quantization",
+    "continuous_batching_if_concurrent",
+    "direct_libllama",
+    "async_independent_tools"
+  ],
+  "results": "Only benchmarks/results/<experiment>/<run>/manifest.json records executions. No planned method has measurements."
+}

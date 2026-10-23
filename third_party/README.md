@@ -1,0 +1,3 @@
+The committed sources are pinned by version and SHA256 in `dependencies.json`. `json.hpp` and `httplib.h` retain their upstream MIT license notices. SQLite is public domain; its source files retain upstream notices. `scripts/check_dependencies.py` verifies the committed files offline. Separate upstream MIT license texts are included alongside the headers.
+
+`llama.cpp/` is a downloaded, ignored build dependency. Its full source revision, archive digest, and official model revision/digest are pinned in `configs/runtime.lock.json`. Its license remains in the downloaded source tree. The official Qwen model is under its upstream Apache 2.0 license, linked from the model card.

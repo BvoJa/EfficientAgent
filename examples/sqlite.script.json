@@ -1,0 +1,5 @@
+[
+  {"type":"tool","name":"query_sqlite","arguments":{"path":"benchmarks/datasets/benchmark.sqlite","sql":"SELECT model, latency_ms, fps FROM benchmarks ORDER BY latency_ms ASC LIMIT 3"}},
+  {"type":"tool","name":"write_report","arguments":{"filename":"fastest.md","title":"Fastest synthetic configurations","observation_ids":["obs-1"]}},
+  {"type":"final","success":true,"answer":"The fastest configurations are tiny-a, tiny-d and tiny-b. Saved outputs/fastest.md.","evidence":["obs-1","obs-2"]}
+]

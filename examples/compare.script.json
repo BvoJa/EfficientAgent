@@ -1,0 +1,6 @@
+[
+  {"type":"tool","name":"inspect_csv","arguments":{"path":"benchmarks/datasets/models.csv"}},
+  {"type":"tool","name":"query_csv","arguments":{"paths":["benchmarks/datasets/models.csv"],"sort":[{"column":"accuracy","descending":true}],"limit":20}},
+  {"type":"tool","name":"write_report","arguments":{"filename":"comparison.md","title":"Accuracy and latency comparison (synthetic fixtures)","observation_ids":["obs-1","obs-2"]}},
+  {"type":"final","success":true,"answer":"Saved accuracy and latency statistics and sorted model data to outputs/comparison.md.","evidence":["obs-1","obs-2","obs-3"]}
+]

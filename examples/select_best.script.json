@@ -1,0 +1,7 @@
+[
+  {"type":"tool","name":"list_files","arguments":{"path":"benchmarks/datasets","extension":".csv"}},
+  {"type":"tool","name":"inspect_csv","arguments":{"path":"benchmarks/datasets/models.csv"}},
+  {"type":"tool","name":"query_csv","arguments":{"paths":["benchmarks/datasets/models.csv"],"filters":[{"column":"latency_ms","op":"lt","value":50}],"sort":[{"column":"mAP","descending":true}],"limit":1}},
+  {"type":"tool","name":"write_report","arguments":{"filename":"best-model.json","title":"Highest mAP below 50 ms (synthetic fixtures)","observation_ids":["obs-3"]}},
+  {"type":"final","success":true,"answer":"tiny-b has the highest mAP (0.71) among configurations with latency below 50 ms (44 ms). Saved the evidence in outputs/best-model.json.","evidence":["obs-1","obs-2","obs-3","obs-4"]}
+]

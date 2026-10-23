@@ -1,0 +1,6 @@
+[
+  {"type":"tool","name":"inspect_csv","arguments":{"path":"benchmarks/datasets/configurations.csv"}},
+  {"type":"tool","name":"query_csv","arguments":{"paths":["benchmarks/datasets/configurations.csv"],"sort":[{"column":"fps","descending":true},{"column":"size_mb","descending":false}],"limit":3}},
+  {"type":"tool","name":"write_report","arguments":{"filename":"top-three.json","title":"Top configurations by FPS, then smaller size","observation_ids":["obs-2"]}},
+  {"type":"final","success":true,"answer":"Top configurations are cpu-3, cpu-2, cpu-5, ranked by descending FPS with model size as the tie breaker. Saved outputs/top-three.json.","evidence":["obs-1","obs-2","obs-3"]}
+]

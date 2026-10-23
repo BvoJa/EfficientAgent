@@ -1,0 +1,5 @@
+model,mAP,accuracy,latency_ms,fps,size_mb
+tiny-a,0.62,0.75,22,45.45,12
+tiny-b,0.71,0.81,44,22.73,18
+tiny-c,0.78,0.86,63,15.87,24
+tiny-d,0.68,0.79,31,32.26,15

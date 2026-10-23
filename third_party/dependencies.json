@@ -1,0 +1,5 @@
+{
+  "nlohmann_json": {"version":"3.12.0","license":"MIT","files":{"json.hpp":"aaf127c04cb31c406e5b04a63f1ae89369fccde6d8fa7cdda1ed4f32dfc5de63"},"source":"https://github.com/nlohmann/json/tree/v3.12.0"},
+  "cpp_httplib": {"version":"0.20.0","license":"MIT","files":{"httplib.h":"2831f48258d8e20ea88ea82c63f15014ced0a584cbdb1cd3bea1a60b6fb971e5"},"source":"https://github.com/yhirose/cpp-httplib/tree/v0.20.0"},
+  "sqlite": {"version":"3.50.2","license":"public domain","files":{"sqlite3.c":"c9a0b6829b81d5f1b78392181f09744c818117a725667411d517b98149fcd3be","sqlite3.h":"7db44ac3e95c465c30eea8d45d81474c7cda49ab76e8a681e752e535d1560f2e"},"source":"https://www.sqlite.org/2025/sqlite-amalgamation-3500200.zip"}
+}
